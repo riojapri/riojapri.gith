@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplikasi Kompresi</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Aplikasi Kompresi</h1>
+    <div class="section">
+      <h2>Kompresi Gambar</h2>
+      <input type="file" id="image-input" accept="image/*">
+      <button onclick="compressImage()">Kompresi</button>
+      <a id="download-image" href="#" download>Download Gambar Kompresi</a>
+      <div class="result">
+        <h2>Hasil Kompresi Gambar</h2>
+        <img id="compressed-image" src="" alt="Hasil Kompresi Gambar">
+      </div>
+    </div>
+    <div class="section">
+      <h2>Kompresi Audio</h2>
+      <input type="file" id="audio-input" accept="audio/*">
+      <button onclick="compressAudio()">Kompresi</button>
+      <a id="download-audio" href="#" download>Download Audio Kompresi</a>
+      <div class="result">
+        <h2>Hasil Kompresi Audio</h2>
+        <audio id="compressed-audio" controls>
+          <source id="compressed-audio-source" src="" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
